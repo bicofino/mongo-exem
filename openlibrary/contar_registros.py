@@ -9,7 +9,7 @@ def contar_registros():
         if nome.startswith('system.'):
             continue
         colecao = getattr(db, nome)
-        print '{1:10,} {0}'.format(nome, colecao.count())
+        print '{1:10} {0}'.format(nome, colecao.count())
 
 if __name__=='__main__':
     contar_registros()
